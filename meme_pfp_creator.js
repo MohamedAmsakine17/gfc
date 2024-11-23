@@ -747,15 +747,32 @@ canvas.addEventListener("touchend", () => {
 const downloadButton = document.getElementById("download-button");
 
 downloadButton.addEventListener("click", () => {
-  // // Convert the canvas content to a data URL (image)
-  const dataUrl = canvas.toDataURL("image/png"); // You can change the format (e.g., 'image/jpeg') if needed
+  // Set the desired scale factor (e.g., 2x for double resolution)
+  const scaleFactor = 2;
 
-  // // Create an anchor link element to trigger the download
+  // Create a temporary canvas with higher dimensions
+  const tempCanvas = document.createElement("canvas");
+  const tempCtx = tempCanvas.getContext("2d");
+
+  // Scale the canvas size (width and height)
+  tempCanvas.width = canvas.width * scaleFactor;
+  tempCanvas.height = canvas.height * scaleFactor;
+
+  // Scale the drawing context
+  tempCtx.scale(scaleFactor, scaleFactor);
+
+  // Redraw the current canvas content on the temporary high-resolution canvas
+  tempCtx.drawImage(canvas, 0, 0);
+
+  // Convert the high-resolution canvas content to a data URL
+  const dataUrl = tempCanvas.toDataURL("image/png");
+
+  // Create an anchor link element to trigger the download
   const link = document.createElement("a");
   link.href = dataUrl; // Set the href to the data URL
-  link.download = "canvas-image.png"; // Set the filename for the downloaded image
+  link.download = "cfg.png"; // Set the filename for the downloaded image
 
-  // // Trigger a click on the link to start the download
+  // Trigger a click on the link to start the download
   link.click();
 });
 
