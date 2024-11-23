@@ -748,7 +748,7 @@ const downloadButton = document.getElementById("download-button");
 
 downloadButton.addEventListener("click", () => {
   // Set the desired scale factor (e.g., 2x for double resolution)
-  const scaleFactor = 2;
+  const scaleFactor = 1;
 
   // Create a temporary canvas with higher dimensions
   const tempCanvas = document.createElement("canvas");
