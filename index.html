@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="icon" type="image/x-icon" href="/imgs/favicon.png" />
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/meme.css" />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/popsup.css" />
+    <link rel="stylesheet" href="css/responsive.css" />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.3/font/bootstrap-icons.min.css"
+    />
+    <title>GFC</title>
+  </head>
+  <body>
+    <!-- FLASH SCREEN -->
+    <div id="flash-screen"></div>
+    <!--CLICKABLE IMAGE AND METER-->
+    <div id="click-area">
+      <img id="main-image" src="./imgs/kek.png" alt="Static Image" />
+      <!-- <img id="chicken-bucket-img" src="./imgs/chicken-bucket2.png" alt="" />
+      <div id="meter-container">
+        <div id="meter-fill"></div>
+      </div> -->
+      <div id="hearts-container">
+        <img class="heart" src="./imgs/empty-heart.png" alt="Empty Heart" />
+        <img class="heart" src="./imgs/empty-heart.png" alt="Empty Heart" />
+        <img class="heart" src="./imgs/empty-heart.png" alt="Empty Heart" />
+        <img class="heart" src="./imgs/empty-heart.png" alt="Empty Heart" />
+        <img class="heart" src="./imgs/empty-heart.png" alt="Empty Heart" />
+      </div>
+      <div class="video-overlay"></div>
+    </div>
+    <div class="intermediary-image-container">
+      <img
+        id="intermediary-image"
+        src="./imgs/chicken.png"
+        alt="Clickable Image"
+        style="display: none"
+      />
+    </div>
+
+    <!-- CONTENT -->
+    <div id="content">
+      <nav>
+        <div class="vertical-line"></div>
+        <ul class="navbar">
+          <li class="nav-list" id="home">
+            <a href="" class="nav-link clicked-menu">HOME</a>
+          </li>
+          <br />
+          <li class="nav-list" id="about-btn">
+            <a class="nav-link">ABOUT</a>
+          </li>
+          <li class="nav-list" id="tokenmics-btn">
+            <a class="nav-link">TOKENMICS</a>
+          </li>
+          <br />
+          <li class="nav-list"><a href="" class="nav-link">BUY $GFC</a></li>
+          <li class="nav-list"><a href="" class="nav-link">MERCH</a></li>
+          <li class="nav-list"><a href="" class="nav-link">TESTIMONIALS</a></li>
+          <br />
+          <br />
+          <li class="nav-list" id="show-pfp-creator">
+            <a class="nav-link">PFP CREATOR</a>
+          </li>
+          <li class="nav-list" id="show-meme-creator">
+            <a class="nav-link">MEME CREATOR</a>
+          </li>
+        </ul>
+      </nav>
+
+      <section id="about">
+        <h2>ABOUT</h2>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Distinctio
+          sunt ex similique, praesentium nostrum suscipit laudantium odio?
+          Soluta libero nobis ipsam maxime, in deleniti, atque ullam dolor
+          repellendus voluptate reiciendis?
+        </p>
+      </section>
+
+      <section id="tokenmics">
+        <h2>TOKENMICS</h2>
+        <p>
+          lorem : 100%
+          <br />
+          Lorem, ipsum : Lorem, ipsum dolor.
+          <br />
+          lorem : Lorem ipsum dolor sit amet.
+        </p>
+      </section>
+    </div>
+
+    <div class="meme-creator" id="meme-creator">
+      <div class="video-overlay"></div>
+
+      <div class="upload-container">
+        <div id="drop-area">
+          <input type="file" id="file-input" style="display: none" />
+          <div id="text-canvas">
+            <i class="bi bi-file-image-fill"></i>
+            <br />
+            <br />
+            Drag and drop image
+            <br />
+            or click to select file
+          </div>
+          <canvas id="image-canvas"></canvas>
+        </div>
+        <div id="controls">
+          <div id="text-controls" style="display: none">
+            <input type="text" id="text-input" placeholder="Edit text" />
+            <div class="text-controls-font">
+              <button id="decrease-font">-</button>
+              <span id="font-size">20px</span>
+              <button id="increase-font">+</button>
+            </div>
+          </div>
+          <button id="add-text-button">Add Text</button>
+          <button id="reset-button">Reset</button>
+          <button id="download-button">Download</button>
+          <div id="how-to-delete">
+            Click Delete or Backspace to delete element!
+          </div>
+        </div>
+      </div>
+
+      <div id="stickers-container">
+        <img src="./imgs/stickers/1.png" class="sticker" />
+        <img src="./imgs/stickers/2.png" class="sticker" />
+        <img src="./imgs/stickers/3.png" class="sticker" />
+        <img src="./imgs/stickers/4.png" class="sticker" />
+        <img src="./imgs/stickers/5.png" class="sticker" />
+        <img src="./imgs/stickers/6.png" class="sticker" />
+        <img src="./imgs/stickers/7.png" class="sticker" />
+        <img src="./imgs/stickers/8.png" class="sticker" />
+        <img src="./imgs/stickers/9.png" class="sticker" />
+        <img src="./imgs/stickers/10.png" class="sticker" />
+        <img src="./imgs/stickers/11.png" class="sticker" />
+        <img src="./imgs/stickers/12.png" class="sticker" />
+        <img src="./imgs/stickers/13.png" class="sticker" />
+        <img src="./imgs/stickers/14.png" class="sticker" />
+        <img src="./imgs/stickers/15.png" class="sticker" />
+        <img src="./imgs/stickers/18.png" class="sticker" />
+        <img src="./imgs/stickers/19.png" class="sticker" />
+        <img src="./imgs/stickers/20.png" class="sticker" />
+        <img src="./imgs/stickers/21.png" class="sticker" />
+        <img src="./imgs/stickers/22.png" class="sticker" />
+        <img src="./imgs/stickers/23.png" class="sticker" />
+        <!-- Add more sticker images here -->
+      </div>
+
+      <span id="close-popup" class="close-popup">X</span>
+    </div>
+
+    <!-- <div class="meme-creator" id="pfp-creator">
+      <div class="video-overlay"></div>
+
+      <div class="upload-container">
+        <div id="drop-area">
+          <input type="file" id="file-input" style="display: none" />
+          <div id="text-canvas">
+            <i class="bi bi-file-image-fill"></i>
+            <br />
+            <br />
+            Drag and drop image
+            <br />
+            or click to select file
+          </div>
+          <canvas id="image-canvas-2"></canvas>
+        </div>
+        <div id="controls">
+          <div id="text-controls" style="display: none">
+            <input type="text" id="text-input" placeholder="Edit text" />
+            <button id="decrease-font">-</button>
+            <span id="font-size">20px</span>
+            <button id="increase-font">+</button>
+          </div>
+          <button id="reset-button">Reset</button>
+          <button id="download-button">Download</button>
+          <div id="how-to-delete">
+            Click Delete or Backspace to delete element!
+          </div>
+        </div>
+      </div>
+
+      <div id="stickers-container">
+        <img src="./imgs/stickers/1.png" class="sticker" />
+        <img src="./imgs/stickers/2.png" class="sticker" />
+        <img src="./imgs/stickers/3.png" class="sticker" />
+        <img src="./imgs/stickers/4.png" class="sticker" />
+        <img src="./imgs/stickers/5.png" class="sticker" />
+        <img src="./imgs/stickers/6.png" class="sticker" />
+        <img src="./imgs/stickers/7.png" class="sticker" />
+        <img src="./imgs/stickers/8.png" class="sticker" />
+        <img src="./imgs/stickers/9.png" class="sticker" />
+        <img src="./imgs/stickers/10.png" class="sticker" />
+        <img src="./imgs/stickers/11.png" class="sticker" />
+        <img src="./imgs/stickers/12.png" class="sticker" />
+        <img src="./imgs/stickers/13.png" class="sticker" />
+        <img src="./imgs/stickers/14.png" class="sticker" />
+        <img src="./imgs/stickers/15.png" class="sticker" />
+        <img src="./imgs/stickers/18.png" class="sticker" />
+        <img src="./imgs/stickers/19.png" class="sticker" />
+        <img src="./imgs/stickers/20.png" class="sticker" />
+        <img src="./imgs/stickers/21.png" class="sticker" />
+        <img src="./imgs/stickers/22.png" class="sticker" />
+        <img src="./imgs/stickers/23.png" class="sticker" />
+        <!-- Add more sticker images here -->
+      <!-- </div> -->
+
+    </div> -->
+    <script src="./meme_pfp_creator.js"></script>
+    <script src="./script.js"></script>
+  </body>
+</html>

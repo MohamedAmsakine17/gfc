@@ -1,0 +1,188 @@
+#content {
+  position: relative;
+}
+
+.meme-creator {
+  display: none; /* Hidden by default */
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 100000000000;
+  pointer-events: none;
+}
+
+/* Pop-up animation */
+#meme-creator.show {
+  display: flex;
+  opacity: 1;
+}
+
+/* Close Button Style */
+.close-popup {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+  font-size: 25px;
+  background-color: rgb(195, 195, 195);
+  padding: 0 7.5px;
+  font-weight: bold;
+  cursor: pointer;
+  color: #000;
+  border: 2px solid white;
+  pointer-events: fill;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.close-popup:hover {
+  color: red;
+}
+
+.upload-container {
+  pointer-events: auto; /* Enable interaction after animation */
+
+  border-radius: 15px;
+  border: 3px solid white;
+  position: relative;
+  text-align: center;
+  width: 600px;
+  background-color: #ccc;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  padding: 20px;
+}
+
+.drop-area {
+  width: 100%;
+  height: 300px;
+  border: 2px dashed #ccc;
+  border-radius: 10px;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: white;
+  overflow: hidden;
+}
+
+#image-canvas {
+  max-width: 100%;
+  max-height: 100%;
+  display: block;
+}
+
+button {
+  margin-top: 10px;
+  padding: 10px 20px;
+  background-color: #0b85d9;
+  color: white;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 18px;
+  font-weight: bold;
+}
+
+button:hover {
+  background-color: #086a9d;
+}
+
+#reset-button {
+  background-color: #ff5b5b;
+}
+
+#reset-button:hover {
+  background-color: #d93b3b;
+}
+
+#download-button {
+  background-color: rgb(4, 224, 121);
+}
+
+#download-button:hover {
+  background-color: rgb(3, 177, 96);
+}
+
+#text-controls {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 30px 0 20px;
+}
+
+#text-input {
+  flex: 1;
+  font-size: 20px;
+  padding: 10px;
+}
+
+#font-size {
+  min-width: 40px;
+  text-align: center;
+  font-size: 20px;
+}
+
+#decrease-font,
+#increase-font {
+  margin-top: 0;
+}
+
+#stickers-container {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  margin-left: 80px;
+  background-color: #ccc;
+  padding: 20px;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px,
+    rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+  height: 500px;
+  overflow-y: scroll;
+  scrollbar-width: thin;
+  scrollbar-color: #888 #ccc;
+  border-radius: 15px;
+  border: 3px solid white;
+  pointer-events: auto; /* Enable interaction after animation */
+}
+
+#stickers-container::-webkit-scrollbar {
+  width: 6px; /* Set scrollbar width */
+}
+
+#stickers-container::-webkit-scrollbar-track {
+  background: #ccc; /* Background of the track */
+}
+
+#stickers-container::-webkit-scrollbar-thumb {
+  background: #888; /* Color of the thumb */
+  border-radius: 3px; /* Rounded corners for the thumb */
+}
+
+#stickers-container::-webkit-scrollbar-thumb:hover {
+  background: #555; /* Darker color when hovered */
+}
+
+.sticker {
+  width: 80px;
+  margin-bottom: 10px;
+  cursor: pointer;
+}
+
+#text-canvas {
+  position: absolute;
+  top: 30%;
+  left: 33%;
+  color: rgb(130, 130, 0);
+  font-size: 20px;
+  border: 2px dashed;
+  padding: 40px 20px;
+  pointer-events: none;
+}
+
+#how-to-delete {
+  margin-top: 15px;
+  color: rgb(81, 81, 81);
+}
