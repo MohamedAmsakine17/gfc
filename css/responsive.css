@@ -135,13 +135,28 @@
   #hearts-container {
     left: 22.5%;
   }
+
+  #click-area {
+    background-image: url("../imgs/kekbg.jpg");
+  }
+
+  #hearts-container {
+    position: static;
+    background-image: url("../imgs/sign.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 330.66px;
+    height: 124px;
+    align-items: center;
+  }
+
+  #main-image {
+    width: 330px;
+  }
 }
 
 @media only screen and (max-width: 500px) {
-  #main-image {
-    width: 280px;
-  }
-
   #hearts-container {
     left: 21.5%;
   }
@@ -173,10 +188,6 @@
 }
 
 @media only screen and (max-width: 400px) {
-  #main-image {
-    width: 230px;
-  }
-
   #hearts-container {
     left: 15%;
   }
@@ -193,5 +204,31 @@
   #text-canvas {
     top: 10%;
     left: 20%;
+  }
+}
+
+@media only screen and (max-width: 500px) and (max-height: 1000px) {
+  #main-image {
+    width: 400px;
+  }
+}
+
+
+@media only screen and (max-width: 500px) and (max-height: 850px) {
+  #main-image {
+    width: 380px;
+  }
+}
+
+
+@media only screen and (max-width: 500px) and (max-height: 680px) {
+  #main-image {
+    width: 290px;
+  }
+}
+
+@media only screen and (max-width: 500px) and (max-height: 750px) {
+  #main-image {
+    width: 320px;
   }
 }
