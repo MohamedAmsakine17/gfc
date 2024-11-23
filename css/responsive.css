@@ -139,7 +139,7 @@
 
 @media only screen and (max-width: 500px) {
   #main-image {
-    width: 200px;
+    width: 280px;
   }
 
   #hearts-container {
@@ -174,7 +174,7 @@
 
 @media only screen and (max-width: 400px) {
   #main-image {
-    width: 200px;
+    width: 230px;
   }
 
   #hearts-container {
